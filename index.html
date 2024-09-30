@@ -2,33 +2,30 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dia do Nordestino</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>  
-    <table>
-        <tr>
-            <td width="55%">
-                <img src="Imagens/logo.png" alt="Logo" style="max-width: 80px;"> 
-            </td>
-            <td>
-                <nav>
-                    <ul>
-                        <li><a href="cultura.html">Cultura</a></li>
-                        <li><a href="culinaria.html">Culinária</a></li>
-                        <li><a href="historia.html">História</a></li>
-                        <li><a href="personalidades.html">Personalidades</a></li>
-                    </ul>
-                </nav>
-            </td>
-        </tr>
-
-    </table>  
+        <table>
+            <tr>
+                <td width="55%">
+                    <img src="Imagens/logo.png" alt="Logo" style="max-width: 80px;"> 
+                </td>
+                <td>
+                    <nav>
+                        <ul>
+                            <li><a href="historia.html">História</a></li>
+                            <li><a href="cultura.html">Cultura</a></li>
+                            <li><a href="culinaria.html">Culinária</a></li>
+                            <li><a href="personalidades.html">Personalidades</a></li>
+                        </ul>
+                    </nav>
+                </td>
+            </tr>
+        </table>  
     </header>
 
-    <!-- Seção principal -->
     <section class="main-content" id="main-section">
         <div class="content-wrapper">
             <div class="title-section">
@@ -41,7 +38,6 @@
         </div>
     </section>
 
-    <!-- Seção de destaque -->
     <section class="highlight" id="highlight-section">
         <h2>Celebre o Dia do Nordestino!</h2>
         <p>
@@ -49,7 +45,6 @@
         </p>
     </section>
 
-    <!-- Rodapé -->
     <footer>
         <div class="footer-content">
             <h3>Viva o Nordeste!</h3>
@@ -70,7 +65,6 @@
         const highlightSection = document.getElementById('highlight-section');
 
         scrollButton.addEventListener('click', () => {
-            // Verifique se os elementos foram encontrados
             if (scrollButton && highlightSection) {
                 highlightSection.scrollIntoView({ behavior: 'smooth' });
             }
